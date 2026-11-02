@@ -1,0 +1,16 @@
+# Ignore everything by default.
+*
+
+# Allow Git to traverse directories.
+!*/
+
+# Track C source files and header files.
+!*.c
+!*.h
+
+# Track development environment files.
+!Dockerfile
+
+# Track Git configuration files.
+!.gitignore
+!.gitattributes

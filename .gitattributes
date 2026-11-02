@@ -1,0 +1,10 @@
+# Automatically detect text files.
+* text=auto
+
+# Store C source and header files using Unix LF line endings.
+*.c text eol=lf
+*.h text eol=lf
+
+# Keep Git configuration files using Unix LF line endings.
+.gitignore text eol=lf
+.gitattributes text eol=lf

@@ -1,6 +1,8 @@
 /* Computes the dimensional weight of a box */
 #include <stdio.h>
 
+#define INCHES_PER_POUND 166
+
 int main(void) 
 {
     int height, length, width, volume, weight;
@@ -9,7 +11,7 @@ int main(void)
     length = 12;
     width = 10;
     volume = height * length * width;
-    weight = (volume + 165) / 166;
+    weight = (volume + INCHES_PER_POUND - 1) / INCHES_PER_POUND; // Round up to the nearest pound
 
     printf("Dimensions: %dx%dx%d\n", height, length, width);
     printf("Volume (cubic inches): %d\n", volume);

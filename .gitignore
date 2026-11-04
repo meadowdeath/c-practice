@@ -14,3 +14,12 @@
 # Track Git configuration files.
 !.gitignore
 !.gitattributes
+
+# VS Code development configuration
+!.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Dev Containers configuration
+!.devcontainer/
+!.devcontainer/devcontainer.json

@@ -18,6 +18,18 @@ RUN apt-get update && \
         gdb \
     && rm -rf /var/lib/apt/lists/*
 
+# Create an unprivileged development user.
+# Match the UID and GID of the host user.
+RUN groupadd --gid 1000 developer && \
+    useradd --uid 1000 \
+            --gid 1000 \
+            --create-home \
+            --shell /bin/bash \
+            developer
+
+# Run development processes as the unprivileged user.
+USER developer
+
 # Set /workspace as the default directory inside the container.
 # The host directory containing the C source files will be mounted here.
 WORKDIR /workspace

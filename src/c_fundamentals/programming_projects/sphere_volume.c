@@ -7,7 +7,9 @@ int main(void)
 {
     float radius, volume;
 
-    radius = 10.0f; 
+    printf("Enter the radius of the sphere: ");
+    scanf("%f", &radius);
+
     volume = SPHERE_VOLUME_COEFFICIENT * PI * radius * radius * radius; 
 
     printf("The volume of a sphere with radius %.2f is: %.2f\n", radius, volume);

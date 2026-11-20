@@ -4,6 +4,7 @@ int main(void)
 {
     {
         int i, j;
+
         i = 5;
         j = 3;
 
@@ -12,6 +13,7 @@ int main(void)
 
     {
         int i, j;
+
         i = 2;
         j = 3;
 
@@ -20,6 +22,7 @@ int main(void)
 
     {
         int i, j, k;
+
         i = 7;
         j = 8;
         k = 9;
@@ -29,6 +32,7 @@ int main(void)
 
     {
         int i, j, k;
+        
         i = 1;
         j = 2;
         k = 3;

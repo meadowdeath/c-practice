@@ -2,6 +2,8 @@
 #include <stdio.h>
 
 #define UPC_WEIGHT 3
+#define DECIMAL_BASE 10
+#define CHECK_DIGIT_COMPLEMENT 10
 
 int main(void)
 {
@@ -21,7 +23,7 @@ int main(void)
   
   // Original formula: 9 - ((total - 1) % 10)
   // Simplified formula: (10 - (total % 10)) % 10
-  printf("Check digit: %d\n", (10 - (total % 10)) % 10);
+  printf("Check digit: %d\n", (CHECK_DIGIT_COMPLEMENT - (total % DECIMAL_BASE)) % DECIMAL_BASE);
   
   return 0;
 }
